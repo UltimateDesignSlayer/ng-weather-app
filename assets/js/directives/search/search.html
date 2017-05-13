@@ -1,0 +1,18 @@
+<div class="search-wrapper">
+  <div class="search-bar">
+    <input type="text" ng-model="cityQuery" class="search-bar__input" placeholder="Enter your city" />
+    <button class="search-bar__btn" ng-click="filterCityList()">Find City</button>
+  </div>
+
+  <div class="city-search-results" ng-show="cityResults">
+    <p>
+      Searching for "{{cityQuery}}".<br />
+      Please select your city below.
+    </p>
+    <ul class="city-result-list">
+      <li ng-repeat="city in filteredCityList">
+        <span class="city-result-list__item" ng-click="getLocationWeather(city.id)">{{city.name}}, {{city.country}}</span>
+      </li>
+    </ul>
+  </div>
+</div>

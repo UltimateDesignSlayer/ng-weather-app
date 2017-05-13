@@ -1,0 +1,21 @@
+{
+  "name": "angularapp",
+  "version": "1.0.0",
+  "description": "Practicing Angular. This app will be a weather app with city search. openweathermap",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Mo",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

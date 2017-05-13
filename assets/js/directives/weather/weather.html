@@ -1,0 +1,25 @@
+<div ng-show="weatherResults" class="weather-results">
+  <h1>Current Weather for {{weatherResults.name}}</h1>
+
+  <div class="weather-details">
+    <div class="weather-display">
+      <div class="weather-animation" ng-class="skyColourClass">
+        <div ng-class="weatherAnimation"></div>
+      </div>
+    </div>
+
+    <div class="weather-info">
+      <h2>Details</h2>
+      <p>Status: {{weatherDetails.main}}</p>
+      <p>Current temperature: {{weatherResults.main.temp}}&deg;C</p>
+      <p>Max: {{weatherResults.main.temp_max}}&deg;C</p>
+      <p>Min: {{weatherResults.main.temp_min}}&deg;C</p>
+    </div>
+
+
+  </div>
+
+  <div class="footer-notes">
+    All weather and city data is from <a href="https://openweathermap.org" target="_blank">https://openweathermap.org</a>
+  </div>
+</div>

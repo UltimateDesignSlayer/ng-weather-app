@@ -1,0 +1,6 @@
+@mixin linear-gradient-mixin($propVal...) {
+  background: linear-gradient($propVal);
+  background: -webkit-linear-gradient($propVal);
+  background: -o-linear-gradient($propVal);
+  background: -moz-linear-gradient($propVal);
+}

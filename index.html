@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta name="description" content="Check out the weather now.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/directives/search/searchController.js"></script>
+    <script src="js/directives/weather/weatherController.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="weatherApp" class="weather-app" ng-class="weatherStateClass">
+      <div search-directive></div>
+      <div weather-display-directive></div>
+    </div>
+
+  </body>
+</html>
