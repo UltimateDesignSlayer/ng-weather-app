@@ -1,5 +1,9 @@
 # WeatherApp
 
+This application shows the current weather for any selected city. 
+
+All city and weather data is from https://openweathermap.org/.
+
 ## Requirements
 
 For running dev server:
